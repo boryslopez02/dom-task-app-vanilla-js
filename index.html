@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/css.css">
+    <title>DOM ToDo App</title>
+</head>
+<body>
+    
+    <div class="container-all py-5 px-3">
+        <h1 class="text-center my-5 text-primary">DOM ToDo Js</h1>
+        <form id="form">
+            <input type="text" class="form-control my-2" id="input" placeholder="Ingresar Tarea" autocomplete="off" autofocus>
+            <input type="submit" class="btn btn-primary btn-block" value="Agregar">
+        </form>
+        <div id="lista" class="mt-5"></div>
+        <p class="copy text-primary">ToDo App 2021 by StartCodify. All Rights Reserved</p>
+    </div>
+
+    <template id="template">
+        <div class="alert alert-warning d-flex justify-content-between align-items-center">
+            <p class="m-0">Tarea 1</p>
+            <h3 class="m-0">
+                <img src="img/checkmark.svg" class="btn btn-light btncheck">
+                <img src="img/trash.svg" class="btn btn-light btntrash">
+            </h3>
+        </div>
+    </template>
+
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/js.js"></script>
+</body>
+</html>
